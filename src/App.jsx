@@ -4,6 +4,7 @@ import UserForm from "./components/UserForm";
 import ReviewForm from "./components/ReviewForm";
 import Thanks from "./components/Thanks";
 import "./App.css";
+import Steps from "./components/Steps";
 
 import { useForm } from "./hooks/userForm";
 
@@ -24,7 +25,7 @@ function App() {
           </p>
         </div>
         <div className="form-container">
-          <p>etapas</p>
+          {Steps}
           <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
             <div className="inputs-container">{currentComponent}</div>
             <div className="actions">
